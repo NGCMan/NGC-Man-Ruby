@@ -1,4 +1,6 @@
 # I need to learn how to make an HTML file.
-require "popup"
-
-Popup.goto "http://bing.com"
+fileHtml = File.new("file.html", "w+")
+fileHtml.puts "<HTML><BODY BGCOLOR='green'>"
+fileHtml.puts "<CENTER>This is neat.</CENTER>"
+fileHtml.puts "</BODY></HTML>"
+fileHtml.close()
